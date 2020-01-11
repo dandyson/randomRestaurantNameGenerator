@@ -1,2 +1,2 @@
-# bandNameGenerator
-A new project that takes two user inputs and returns a band name with randomly selected words from an array.
+# randomRestaurantNameGenerator
+A new project that takes a user's name and returns a restaurant name with randomly selected words from arrays.
