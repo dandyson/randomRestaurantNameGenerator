@@ -1,8 +1,45 @@
+body {
+
+/* FONT */
+  font-family: 'Rubik', sans-serif;
+  /* Location of the image */
+  background-image: url(../img/restaurant_background.jpg);
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
+}
+
 #mathDiv {
     border-radius: 50px;
-    background-color: cyan;
-    margin: 50px auto;
-    height: auto;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#558e58+0,96c56f+100 */
+background: #558e58; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #558e58 0%, #96c56f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #558e58 0%,#96c56f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #558e58 0%,#96c56f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#558e58', endColorstr='#96c56f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 600px;
     text-align: center;
   }
