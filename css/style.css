@@ -1,38 +1,39 @@
 body {
-
-/* FONT */
-  font-family: 'Rubik', sans-serif;
-  /* Location of the image */
   background-image: url(../img/restaurant_background.jpg);
-  
-  /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
-  
-  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
   background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
   background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
   background-color: #464646;
 }
 
-#mathDiv {
-    border-radius: 50px;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#558e58+0,96c56f+100 */
-background: #558e58; /* Old browsers */
-background: -moz-linear-gradient(-45deg,  #558e58 0%, #96c56f 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  #558e58 0%,#96c56f 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  #558e58 0%,#96c56f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#558e58', endColorstr='#96c56f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+h1, h2, button, input {
+  font-family: 'Baloo Bhai', cursive;
+}
 
+input {
+  -webkit-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.75);
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 25px;
+}
+
+#submit, #reset {
+  margin-left: 15px;
+}
+
+/*STYLES FOR THE MAIN DIV*/
+#mainDiv {
+    border-radius: 50px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a9db80+0,8db594+100 */
+    background: #a9db80; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a9db80 0%, #8db594 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #a9db80 0%,#8db594 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #a9db80 0%,#8db594 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#8db594',GradientType=0 ); /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006e2e', endColorstr='#006e2e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -52,11 +53,41 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#558e58', end
   .container {
     padding: 50px;
   }
-  
-  #newText {
-    margin-top: 15px;
-  }
-  
+
   button {
     margin-top: 30px;
   }
+
+  /*INPUT*/
+  #no1 {
+    margin-top: 25px;
+  }
+  
+  /*NEW CONTENT ONCE SUBMIT HAS BEEN CLICKED*/
+  #answerTextDiv {
+    display: inline-block;
+    margin-top: 50px;
+  }
+
+  #answerTextDiv > h2 {
+    margin-right: 7px;
+    float: left;
+  }
+
+  /*BUTTONS TO CHANGE THE ANSWER*/
+
+  #amendButtonDiv {
+    position: relative;
+    left: -80px;  
+  }
+
+  #changeButton2{
+    position: relative;
+    left:97px;
+  }
+
+  #changeButton1{
+    position: relative;
+    left: 80px;
+  }
+  

@@ -7,26 +7,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant Name Generator</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="mathDiv">
+    <div id="mainDiv">
         <div class="container">
-            <h1>Restaurant Name Generator</h1>
-            <p>Enter your name:</p>
-            <input id="no1" type="text">
-            <h2>+</h2>
-           <!-- <p>Pick a random verb (Flaming, Sizzling, etc.)</p>
-            <input id="no2" type="text"><br />--> 
-            <button id="submit">Submit</button>
-            <button id="reset">Reset</button>
-            <h2 id="newText"></h2>
+            <h1>RESTAURANT NAME GENERATOR</h1>
+            <h6>Enter your name below and see what you can name your eatery!!</h6>
+            <input id="no1" type="text" placeholder="Enter your name:">
+            <button class="btn btn-success" id="submit">Submit</button>
+            <button class="btn btn-success" id="reset">Reset</button>
+
+            <!--The resulting text goes here-->
+            <div id="answerTextDiv">
+                <h2 class="answerText" id="name">
+                    <h2>
+                        <h2 class="answerText" id="verb"></h2>
+                        <h2 class="answerText" id="noun"></h2>
+                        <h2 id="errorText"></h2>
+            </div>
+            <br />
+            <br />
+            <div id="amendButtonDiv"></div>
         </div>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
-</div>
+    </div>
 </body>
 
 </html>
